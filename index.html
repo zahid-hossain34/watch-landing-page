@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Watch landing page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo">Watch</a>
+            <div class="toggle" onclick="toggle();">
+            </div>
+        </header>
+        <div class="content">
+            <div class="contentbx">
+                <h2>Future Of<br>Your Hand</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iste quae ea doloremque corrupti eligendi ad suscipit harum eos! Sint quaerat voluptatum tempora eius necessitatibus illo sunt id ullam sit.</p>
+                <a href="#">Buy Now</a>
+            </div>
+            <div class="imgbx">
+                <img src="watch.png" alt="">
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><i class='bx bxl-facebook-circle' style='color:rgba(1,51,253,0.7)'  ></i></a></li>
+            <li><a href="#"><i class='bx bxl-twitter' style='color:rgba(25,210,200,0.7)'  ></i></a></li>
+            <li><a href="#"><i class='bx bxl-instagram' style='color:#f73777'  ></i></a></li>
+
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+    function toggle(){
+        const toggle =document.querySelector('.toggle');
+        const banner =document.querySelector('.banner');
+        toggle.classList.toggle('active')
+        banner.classList.toggle('active')
+    }
+
+    </script>
+</body>
+</html>
